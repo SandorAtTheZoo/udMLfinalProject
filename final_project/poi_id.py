@@ -13,6 +13,9 @@ from toolsFeatureSelection import normalizeEmailMessages
 from toolsFeatureSelection import calcTotalMonetaryValues
 from toolsFeatureSelection import significantPoiEmailActivity
 from toolsDataExploration import visualInspect
+from toolsClassifiers import runRandomForestWithKMeans, \
+    runAdaBoostWithKMeans, runGradientBoostWithKMeans, \
+    runSVCWithKMeans, runGaussianNBWithKMeans
 
 ### Task 1: Select what features you'll use.
 
@@ -305,7 +308,7 @@ param_grid = {
 
 
 
-
+from toolsClassifiers import tuneClassifierFromKMeans
 
 features_list = ['poi',
                  'salary',
@@ -328,63 +331,21 @@ features_list = ['poi',
                  'from_this_person_to_poi',
                  'shared_receipt_with_poi'
                  ]
-from sklearn.model_selection import train_test_split
-from feature_format2 import featureFormat
-from toolsFeatureSelection import calcKMeans
-
 my_dataset = calcTotalMonetaryValues(my_dataset)
 newFeatureList = ['fraction_from_poi', 'fraction_to_poi', 'totalIncome', 'totalExpenses','significant_poi_email_activity']
 features_list.extend(newFeatureList)
 
-cleanedData = featureFormat(my_dataset, features_list, removePOI=False)
-mmScaler = MinMaxScaler(feature_range=(0,1000))
-resultsScaled = mmScaler.fit_transform(cleanedData)
-k_features = 5
-fit, Xnew, featureScores = calcKMeans(resultsScaled, features_list, k_features)
-# make new feature list for passing on to tester.py for project
-dfNewFeatureList = featureScores.nlargest(k_features,'Score')['Feature']
-print "new feature list : ", dfNewFeatureList
-features_list = ['poi'] + list(dfNewFeatureList)
-print "FEATURE LIST TO PASS TO TESTER.PY : ", features_list
-Xtrain, Xtest, yTrain, yTest = train_test_split(Xnew, cleanedData[:,0],
-                                                test_size=0.1, random_state=42,
-                                                shuffle=True,
-                                                stratify=cleanedData[:,0])
 
-from sklearn.ensemble import AdaBoostClassifier
-from toolsClassifiers import runClassifier
-import pandas as pd
-from sklearn.metrics import make_scorer
-
-# how to optimize tuning
-# https://towardsdatascience.com/fine-tuning-a-classifier-in-scikit-learn-66e048c21e65
-
-clf = RandomForestClassifier()
-param_grid = {
-    'min_samples_split':[3,5,10],
-    'n_estimators':[50,100],
-    'max_depth': [3, k_features/2, k_features],
-    'max_features': [3, k_features/2, k_features]
-}
-scorers = {
-    'precision_score':make_scorer(precision_score),
-    'recall_score':make_scorer(recall_score),
-    'accuracy_score':make_scorer(accuracy_score)
-}
-clfData = {
-    'xtrain':Xtrain,
-    'ytrain':yTrain,
-    'xtest':Xtest,
-    'ytest':yTest
-}
-clf, y_pred, results = runClassifier(clf, param_grid, clfData, scorers, refit_score='recall_score')
-from toolsValidation import filterScoreResults
-print "RESULTS : ", filterScoreResults(results, filterScoreType='mean_test_recall_score')
-
-# assign best parameters to classifier?
-# https://stackoverflow.com/questions/45074698/how-to-pass-elegantly-sklearns-gridseachcvs-best-parameters-to-another-model
-clf = RandomForestClassifier(**clf.best_params_)
-print "classifier : ", clf
+####################################################Try RandomForestClassifier
+#clf, features_list = runRandomForestWithKMeans(my_dataset, features_list)
+#####################################################Try AdaBoost
+#clf, features_list = runAdaBoostWithKMeans(my_dataset, features_list)
+######################################################Try GradientBoosting
+#clf, features_list = runGradientBoostWithKMeans(my_dataset, features_list)
+######################################################Try SVC
+#clf, features_list = runSVCWithKMeans(my_dataset, features_list)
+######################################################Try GaussianNB
+clf, features_list = runGaussianNBWithKMeans(my_dataset, features_list)
 
 ### Task 6: Dump your classifier, dataset, and features_list so anyone can
 ### check your results. You do not need to change anything below, but make sure

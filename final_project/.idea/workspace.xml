@@ -2,63 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c27a928e-a4d2-46e5-adea-8ed49c73524c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../datasets_questions/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../datasets_questions/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../decision_tree/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../decision_tree/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../evaluation/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../evaluation/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../feature_selection/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../feature_selection/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../feature_selection/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning Final Project.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condaEnv_udMLproject.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature_format2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outlier_cleaner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolsClassifiers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolsDataExploration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolsFeatureSelection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/toolsValidation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../k_means/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../k_means/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../k_means/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../naive_bayes/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../outliers/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../outliers/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../outliers/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pca/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pca/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pca/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pca/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/svm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../svm/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../text_learning/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../text_learning/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../validation/.idea/dictionaries/cjohnso1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../validation/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datasets_questions/explore_enron_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../datasets_questions/explore_enron_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../decision_tree/dt_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/../decision_tree/dt_author_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../evaluation/evaluate_poi_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../evaluation/evaluate_poi_identifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../feature_selection/find_signature.py" beforeDir="false" afterPath="$PROJECT_DIR$/../feature_selection/find_signature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_classifier.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/my_classifier.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_feature_list.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/my_feature_list.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poi_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/poi_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/tester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k_means/k_means_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/../k_means/k_means_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../naive_bayes/nb_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/../naive_bayes/nb_author_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../outliers/enron_outliers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../outliers/enron_outliers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../outliers/outlier_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../outliers/outlier_cleaner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../outliers/outlier_removal_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/../outliers/outlier_removal_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pca/eigenfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pca/eigenfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../regression/finance_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/../regression/finance_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../svm/svm_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/../svm/svm_author_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../text_learning/vectorize_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/../text_learning/vectorize_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tools/parse_out_email_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tools/parse_out_email_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../validation/validate_poi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../validation/validate_poi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolsClassifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsClassifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolsValidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsValidation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +19,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/final_project$outlier_removal_regression.coverage" NAME="outlier_removal_regression Coverage Results" MODIFIED="1546449686827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../outliers" />
     <SUITE FILE_PATH="coverage/final_project$outlier_cleaner.coverage" NAME="outlier_cleaner Coverage Results" MODIFIED="1546487321343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/final_project$poi_id.coverage" NAME="poi_id Coverage Results" MODIFIED="1547259122904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/final_project$poi_id.coverage" NAME="poi_id Coverage Results" MODIFIED="1547272662653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/final_project$toolsFeatureSelection.coverage" NAME="toolsFeatureSelection Coverage Results" MODIFIED="1547227858691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/final_project$k_means_cluster.coverage" NAME="k_means_cluster Coverage Results" MODIFIED="1546276266644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../k_means" />
     <SUITE FILE_PATH="coverage/final_project$enron_outliers.coverage" NAME="enron_outliers Coverage Results" MODIFIED="1546391729856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../outliers" />
@@ -93,20 +43,20 @@
     <splitter split-orientation="vertical" split-proportion="0.5266458">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/toolsClassifiers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+                <state relative-caret-position="325">
+                  <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/toolsValidation.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="112" selection-start-line="112" selection-end-line="112" selection-end-column="33" />
+                <state relative-caret-position="34">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
                 </state>
               </provider>
             </entry>
@@ -114,7 +64,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tester.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="458">
+                <state relative-caret-position="731">
                   <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
                 </state>
               </provider>
@@ -123,7 +73,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/toolsFeatureSelection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="815">
+                <state relative-caret-position="2023">
                   <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
                 </state>
               </provider>
@@ -132,7 +82,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/toolsDataExploration.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="850">
+                <state relative-caret-position="833">
                   <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
                 </state>
               </provider>
@@ -147,51 +97,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../k_means/k_means_cluster.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="918">
-                  <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../outliers/enron_outliers.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" selection-start-line="8" selection-end-line="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../feature_selection/find_signature.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../svm/svm_author_id.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/feature_format2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+                <state relative-caret-position="1887">
+                  <caret line="111" column="32" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -199,17 +113,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/poi_id.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="384" column="47" selection-start-line="384" selection-start-column="47" selection-end-line="384" selection-end-column="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../evaluation/evaluate_poi_identifier.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="799">
-                  <caret line="47" selection-start-line="47" selection-end-line="47" />
+                <state relative-caret-position="308">
+                  <caret line="345" column="1" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -251,10 +156,10 @@
         <option value="$PROJECT_DIR$/outlier_cleaner.py" />
         <option value="$PROJECT_DIR$/feature_format2.py" />
         <option value="$PROJECT_DIR$/toolsFeatureSelection.py" />
-        <option value="$PROJECT_DIR$/toolsClassifiers.py" />
         <option value="$PROJECT_DIR$/tester.py" />
         <option value="$PROJECT_DIR$/toolsValidation.py" />
         <option value="$PROJECT_DIR$/poi_id.py" />
+        <option value="$PROJECT_DIR$/toolsClassifiers.py" />
       </list>
     </option>
   </component>
@@ -369,6 +274,9 @@
       <module name="final_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -388,6 +296,9 @@
       <module name="final_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -407,6 +318,9 @@
       <module name="final_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -453,11 +367,12 @@
       <workItem from="1546959847262" duration="66000" />
       <workItem from="1546959928596" duration="35603000" />
       <workItem from="1547220751362" duration="28491000" />
+      <workItem from="1547264060784" duration="8193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139921000" />
+    <option name="totallyTimeSpent" value="148114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,8 +387,8 @@
     <frame x="-2566" y="0" width="1490" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69905955" visible="true" weight="0.17062937" />
-      <window_info id="Structure" order="1" sideWeight="0.30094042" side_tool="true" visible="true" weight="0.17062937" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6980146" visible="true" weight="0.17272727" />
+      <window_info id="Structure" order="1" sideWeight="0.30198538" side_tool="true" visible="true" weight="0.17272727" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997677" />
@@ -487,13 +402,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32997677" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.25871417" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.25871417" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49007314" visible="true" weight="0.28671327" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48902822" visible="true" weight="0.286014" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.4996127" weight="0.32985073" />
-      <window_info anchor="right" x="0" y="0" width="238" height="1247" id="Documentation" order="5" sideWeight="0.50992686" side_tool="true" visible="true" weight="0.28671327" />
+      <window_info anchor="right" x="0" y="0" width="238" height="1247" id="Documentation" order="5" sideWeight="0.5109718" side_tool="true" visible="true" weight="0.286014" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,13 +425,7 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../outliers/outlier_cleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../outliers/outlier_cleaner.py" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/udMachineLearningPy27/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -527,25 +436,9 @@
     <entry file="file://$PROJECT_DIR$/../tools/email_preprocess.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../naive_bayes/nb_author_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pca/eigenfaces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../outliers/outlier_removal_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../naive_bayes/nb_author_id.py" />
+    <entry file="file://$PROJECT_DIR$/../pca/eigenfaces.py" />
+    <entry file="file://$PROJECT_DIR$/../outliers/outlier_removal_regression.py" />
     <entry file="file://$PROJECT_DIR$/../tools/feature_format.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-884">
@@ -560,48 +453,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outlier_cleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../k_means/k_means_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../outliers/enron_outliers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../feature_selection/find_signature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../svm/svm_author_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../evaluation/evaluate_poi_identifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../k_means/k_means_cluster.py" />
+    <entry file="file://$PROJECT_DIR$/../outliers/enron_outliers.py" />
+    <entry file="file://$PROJECT_DIR$/../feature_selection/find_signature.py" />
+    <entry file="file://$PROJECT_DIR$/../svm/svm_author_id.py" />
+    <entry file="file://$PROJECT_DIR$/../evaluation/evaluate_poi_identifier.py" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/udMachineLearningPy27/Lib/site-packages/sklearn/metrics/classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -616,52 +472,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toolsDataExploration.py">
+    <entry file="file://$PROJECT_DIR$/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+        <state relative-caret-position="731">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toolsFeatureSelection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
+        <state relative-caret-position="2023">
           <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toolsDataExploration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="78" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outlier_cleaner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_format2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toolsClassifiers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toolsValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="112" selection-start-line="112" selection-end-line="112" selection-end-column="33" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="32" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/poi_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="384" column="47" selection-start-line="384" selection-start-column="47" selection-end-line="384" selection-end-column="47" />
+        <state relative-caret-position="308">
+          <caret line="345" column="1" selection-start-line="345" selection-start-column="1" selection-end-line="345" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toolsValidation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toolsClassifiers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
         </state>
       </provider>
     </entry>

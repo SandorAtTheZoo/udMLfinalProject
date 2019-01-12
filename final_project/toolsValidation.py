@@ -1,9 +1,12 @@
 
 def filterScoreResults(results, filterScoreType='mean_test_precision_score'):
     results = results.sort_values(by=filterScoreType, ascending=False)
+    # features not in adaboost
+    # 'param_max_depth','param_max_features','param_min_samples_split',
+    # features not in SVC
+    # 'param_n_estimators'
     return results[['mean_test_precision_score', 'mean_test_recall_score',
-                    'mean_test_accuracy_score', 'param_max_depth', 'param_max_features',
-                    'param_min_samples_split', 'param_n_estimators']].round(3).head()
+                    'mean_test_accuracy_score']].round(3).head()
 
 if __name__ == "__main__":
     import pickle

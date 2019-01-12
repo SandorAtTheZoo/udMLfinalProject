@@ -5,10 +5,4 @@ aS'significant_poi_email_activity'
 p2
 aS'exercised_stock_options'
 p3
-aS'loan_advances'
-p4
-aS'total_stock_value'
-p5
-aS'bonus'
-p6
 a.
