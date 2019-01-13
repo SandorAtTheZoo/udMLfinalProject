@@ -13,7 +13,9 @@ from toolsClassifiers import runRandomForestWithKBest, \
     runSVCWithKBest, runGaussianNBWithKBest
 
 ### Task 1: Select what features you'll use.
-
+'''
+again, much of this was done from the jupyter notebook. The code is hidden for readability.
+'''
 data_dict = {}
 
 ### Load the dictionary containing the dataset
@@ -65,21 +67,23 @@ visualizeList = [
     ['poi', 'other', 'long_term_incentive']
 ]
 # new features :     ['poi', 'totalIncome', 'totalExpenses'],
-for featureList in visualizeList:
-    visualInspect(featureList, data_dict)
-
-# # now train on a dataset, and then remove outliers from that fit, and re-train
-# features_list = ['poi', 'deferred_income', 'exercised_stock_options']
-# pruneTenPercentOutliers(cleanedData)
-
+'''
+uncomment the below code for the visualizations.  The same code is called from jupyter.
+'''
+# for featureList in visualizeList:
+#     visualInspect(featureList, data_dict)
 
 ### Task 3: Create new feature(s)
+
+'''
+uncomment the visualization below if desired.  commented out while building classifiers
+'''
 # like the email example in L12Q4
 ### Store to my_dataset for easy export below.
 my_dataset = normalizeEmailMessages(data_dict)
 # visualize result
-visFeatures = ['poi', 'fraction_from_poi', 'fraction_to_poi']
-visualInspect(visFeatures, my_dataset)
+# visFeatures = ['poi', 'fraction_from_poi', 'fraction_to_poi']
+# visualInspect(visFeatures, my_dataset)
 
 # create another new feature which is significant_poi_email_activity (>2% from, >17% to)
 # or approximately a ratio of 1/8 from/to
@@ -94,65 +98,9 @@ my_dataset = calcTotalMonetaryValues(my_dataset)
 ### http://scikit-learn.org/stable/modules/pipeline.html
 
 '''
-SCALING / NORMALIZATION REQUIRED
-https://scikit-learn.org/stable/auto_examples/preprocessing/plot_scaling_importance.html#sphx-glr-auto-examples-preprocessing-plot-scaling-importance-py
-
-- required for SVM, but DEFINITELY for PCA
-
+TODO : This task was performed in the jupyter notebook, calling functions in the 
+toolsValidation.py package.
 '''
-# https://scikit-learn.org/stable/modules/compose.html#pipeline
-# https://www.kaggle.com/baghern/a-deep-dive-into-sklearn-pipelines
-# 2. Set up pipeline with StandardScaler to PCA to GridSearchCV for component selection and then SVM for classification
-
-
-# # PCA setup
-# data = featureFormat(my_dataset, features_list, sort_keys = True, replace_NaN_with_median=False)
-#
-# print " xtrain : ", data[:,1:]
-# print " xtrain 2 : ", data[:,0]
-# X_train, X_test, y_train, y_test = train_test_split(data[:,1:], data[:,0],
-#                                                     test_size=0.2, random_state=42,
-#                                                     shuffle=True)
-#
-# # next fit_transform the data with MinMax in preparation for PCA (required to normalize data prior to inputting to PCA, but can't call fit_transform on final pipeline, since SVM doesn't support that call)
-#
-# mmScaler = MinMaxScaler(feature_range=(0,1000))
-# X_resultScaler = mmScaler.fit_transform(X_train)
-# print "minmax scaler result : ", X_resultScaler
-#
-# # 3. run PCA on all features (X) and target (poi)
-#
-# estimators = [('reduce_dim', PCA()), ('clf', AdaBoostClassifier())]
-# pipe = Pipeline(estimators)
-# print "tessssssssssst"
-# featureCount = range(3,10)
-# estCount = range(1,100,10)
-# learnRateCount = np.arange(0.1,2,0.25)
-# minSampleSplitCount = range(2,10,1)
-# # now run it through cross validation
-# param_grid = {
-#     'reduce_dim__n_components' : featureCount,
-#     'clf__n_estimators' : estCount,
-#     'clf__learning_rate' : learnRateCount
-# }
-# # 4. output components to GridSearchCV for optimal component downselect
-# # EXPENSIVE :
-# # find best classifier parameters with GridSearchCV
-# search = GridSearchCV(pipe, param_grid, return_train_score=True)
-# clf = search.fit(X_resultScaler, y_train)
-# print "best CV parameter score : ", search.best_score_, search.best_params_
-#
-# predCVtest = search.predict(X_test)
-# print "cv precision : ", cross_val_score(search, X_test, y_test, scoring='precision')
-# print "cv recall : ", cross_val_score(search, X_test, y_test, scoring='recall')
-#
-# # more scoring
-# from sklearn.metrics import precision_score
-# from sklearn.metrics import recall_score
-# print "predictions, actual : ", predTest, y_test
-# print "precision score : ", precision_score(y_test, predTest)
-# print "recall score : ", recall_score(y_test, predTest)
-
 
 
 ### Task 5: Tune your classifier to achieve better than .3 precision and recall 
@@ -171,11 +119,11 @@ features_list.extend(newFeatureList)
 #####################################################Try AdaBoost
 #clf, features_list = runAdaBoostWithKBest(my_dataset, features_list)
 ######################################################Try GradientBoosting
-#clf, features_list = runGradientBoostWithKMeans(my_dataset, features_list)
+clf, features_list = runGradientBoostWithKMeans(my_dataset, features_list)
 ######################################################Try SVC
 #clf, features_list = runSVCWithKBest(my_dataset, features_list)
 ######################################################Try GaussianNB
-clf, features_list = runGaussianNBWithKBest(my_dataset, features_list)
+#clf, features_list = runGaussianNBWithKBest(my_dataset, features_list)
 
 ### Task 6: Dump your classifier, dataset, and features_list so anyone can
 ### check your results. You do not need to change anything below, but make sure
