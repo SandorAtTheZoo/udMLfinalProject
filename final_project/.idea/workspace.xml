@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c27a928e-a4d2-46e5-adea-8ed49c73524c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/final_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/final_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Machine Learning Final Project-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Machine Learning Final Project-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning Final Project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning Final Project.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poi_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/poi_id.py" afterDir="false" />
-    </list>
+    <list default="true" id="c27a928e-a4d2-46e5-adea-8ed49c73524c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,12 +371,12 @@
       <workItem from="1547312481079" duration="13043000" />
       <workItem from="1547351848452" duration="506000" />
       <workItem from="1547352377048" duration="503000" />
-      <workItem from="1547352901577" duration="1186000" />
+      <workItem from="1547352901577" duration="1792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163352000" />
+    <option name="totallyTimeSpent" value="163958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,14 +389,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2566" y="0" width="1490" height="1447" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6938349" visible="true" weight="0.18111888" />
-      <window_info id="Structure" order="1" sideWeight="0.3061651" side_tool="true" visible="true" weight="0.18111888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69470406" visible="true" weight="0.18111888" />
+      <window_info id="Structure" order="1" sideWeight="0.30529594" side_tool="true" visible="true" weight="0.18111888" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997677" />
-      <window_info anchor="bottom" x="-2558" y="559" width="1474" height="328" id="Run" order="2" weight="0.25406662" />
+      <window_info anchor="bottom" x="-2558" y="559" width="1474" height="328" id="Run" order="2" visible="true" weight="0.25406662" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3137103" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -413,13 +405,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32997677" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.25871417" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.25871417" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48589343" visible="true" weight="0.286014" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48494288" visible="true" weight="0.286014" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.4996127" weight="0.32985073" />
-      <window_info anchor="right" x="0" y="0" width="238" height="1247" id="Documentation" order="5" sideWeight="0.5141066" side_tool="true" visible="true" weight="0.286014" />
+      <window_info anchor="right" x="0" y="0" width="238" height="1247" id="Documentation" order="5" sideWeight="0.5150571" side_tool="true" visible="true" weight="0.286014" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
