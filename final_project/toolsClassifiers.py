@@ -11,7 +11,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score,precision_score,recall_score, f1_score
 
 from feature_format2 import featureFormat
-from toolsFeatureSelection import calcKMeans
+from toolsFeatureSelection import calcKBest
 from toolsValidation import filterScoreResults
 
 def runClassifier(estimator, param_grid, clfData, scorers, refit_score='f1_score'):
@@ -41,12 +41,12 @@ def grid_search_wrapper(clfData, estimator, param_grid, scorers, refit_score):
     results = pd.DataFrame(grid_search.cv_results_)
     return grid_search, y_pred, results
 
-def tuneClassifierFromKMeans(my_dataset, features_list, classifierType, param_grid,
-                             k_features, test_size, scoring='f1_score'):
+def tuneClassifierFromKBest(my_dataset, features_list, classifierType, param_grid,
+                            k_features, test_size, scoring='f1_score'):
     cleanedData = featureFormat(my_dataset, features_list, removePOI=False)
     mmScaler = MinMaxScaler(feature_range=(0, 1000))
     resultsScaled = mmScaler.fit_transform(cleanedData)
-    fit, Xnew, featureScores = calcKMeans(resultsScaled, features_list, k_features)
+    fit, Xnew, featureScores = calcKBest(resultsScaled, features_list, k_features)
     # make new feature list for passing on to tester.py for project
     dfNewFeatureList = featureScores.nlargest(k_features, 'Score')['Feature']
     print "new feature list : ", dfNewFeatureList
@@ -85,7 +85,7 @@ def tuneClassifierFromKMeans(my_dataset, features_list, classifierType, param_gr
                                                       filterScoreType='mean_test_recall_score')
     return clf, features_list
 
-def runRandomForestWithKMeans(my_dataset, features_list):
+def runRandomForestWithKBest(my_dataset, features_list):
     classifierType = RandomForestClassifier()
     k_features = 5
     test_size=0.1
@@ -95,14 +95,15 @@ def runRandomForestWithKMeans(my_dataset, features_list):
         'max_depth': [3, k_features / 2, k_features],
         'max_features': [3, k_features / 2, k_features]
     }
-    clf, features_list = tuneClassifierFromKMeans(my_dataset, features_list, classifierType,
-                                                  param_grid, k_features, test_size)
+    clf, features_list = tuneClassifierFromKBest(my_dataset, features_list, classifierType,
+                                                 param_grid, k_features, test_size,
+                                                 scoring='recall_score')
     # assign best parameters to classifier
     # https://stackoverflow.com/questions/45074698/how-to-pass-elegantly-sklearns-gridseachcvs-best-parameters-to-another-model
     clf = RandomForestClassifier(**clf.best_params_)
     return clf, features_list
 
-def runAdaBoostWithKMeans(my_dataset, features_list):
+def runAdaBoostWithKBest(my_dataset, features_list):
     classifierType = AdaBoostClassifier()
     k_features = 5
     test_size=0.3
@@ -110,8 +111,8 @@ def runAdaBoostWithKMeans(my_dataset, features_list):
         'n_estimators': [50, 100,150,200],
         'learning_rate': [0.5, 1, 2,5,10]
     }
-    clf, features_list = tuneClassifierFromKMeans(my_dataset, features_list, classifierType,
-                                                  param_grid, k_features, test_size)
+    clf, features_list = tuneClassifierFromKBest(my_dataset, features_list, classifierType,
+                                                 param_grid, k_features, test_size)
     # assign best parameters to classifier
     # https://stackoverflow.com/questions/45074698/how-to-pass-elegantly-sklearns-gridseachcvs-best-parameters-to-another-model
     clf = AdaBoostClassifier(**clf.best_params_)
@@ -126,14 +127,14 @@ def runGradientBoostWithKMeans(my_dataset, features_list):
         'learning_rate': [0.01, 0.1, 1, 2, 5],
         'subsample':[0.3, 0.6, 1]
     }
-    clf, features_list = tuneClassifierFromKMeans(my_dataset, features_list, classifierType,
-                                                  param_grid, k_features, test_size)
+    clf, features_list = tuneClassifierFromKBest(my_dataset, features_list, classifierType,
+                                                 param_grid, k_features, test_size)
     # assign best parameters to classifier
     # https://stackoverflow.com/questions/45074698/how-to-pass-elegantly-sklearns-gridseachcvs-best-parameters-to-another-model
     clf = GradientBoostingClassifier(**clf.best_params_)
     return clf, features_list
 
-def runSVCWithKMeans(my_dataset, features_list):
+def runSVCWithKBest(my_dataset, features_list):
     classifierType = SVC()
     k_features = len(features_list)-1
     test_size=0.3
@@ -141,22 +142,22 @@ def runSVCWithKMeans(my_dataset, features_list):
         'C': [0.0000001, 0.000001, 0.00001, 0.0001, 0.001, 0.1,1,2,4,8,16],
         'gamma': [0.0000001, 0.000001, 0.00001, 0.0001, 0.001, 0.1, 0.5, 1, 2, 4]
     }
-    clf, features_list = tuneClassifierFromKMeans(my_dataset, features_list, classifierType,
-                                                  param_grid, k_features, test_size,
-                                                  scoring='f1_score')
+    clf, features_list = tuneClassifierFromKBest(my_dataset, features_list, classifierType,
+                                                 param_grid, k_features, test_size,
+                                                 scoring='f1_score')
     # assign best parameters to classifier
     # https://stackoverflow.com/questions/45074698/how-to-pass-elegantly-sklearns-gridseachcvs-best-parameters-to-another-model
     clf = SVC(**clf.best_params_)
     return clf, features_list
 
-def runGaussianNBWithKMeans(my_dataset, features_list):
+def runGaussianNBWithKBest(my_dataset, features_list):
     classifierType = GaussianNB()
     k_features = 2
     test_size=0.25
     param_grid = {}
-    clf, features_list = tuneClassifierFromKMeans(my_dataset, features_list, classifierType,
-                                                  param_grid, k_features, test_size,
-                                                  scoring='recall_score')
+    clf, features_list = tuneClassifierFromKBest(my_dataset, features_list, classifierType,
+                                                 param_grid, k_features, test_size,
+                                                 scoring='recall_score')
     # assign best parameters to classifier
     # https://stackoverflow.com/questions/45074698/how-to-pass-elegantly-sklearns-gridseachcvs-best-parameters-to-another-model
     clf = GaussianNB()

@@ -44,7 +44,7 @@ if __name__ == "__main__":
                      ]
     from sklearn.model_selection import train_test_split
     from feature_format2 import featureFormat
-    from toolsFeatureSelection import calcKMeans
+    from toolsFeatureSelection import calcKBest
 
     ### Store to my_dataset for easy export below.
     my_dataset = normalizeEmailMessages(data_dict)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     mmScaler = MinMaxScaler(feature_range=(0, 1000))
     resultsScaled = mmScaler.fit_transform(cleanedData)
     k_features = len(features_list) - 1
-    fit, Xnew, featureScores = calcKMeans(resultsScaled, features_list, k_features)
+    fit, Xnew, featureScores = calcKBest(resultsScaled, features_list, k_features)
     Xtrain, Xtest, yTrain, yTest = train_test_split(Xnew, cleanedData[:, 0],
                                                     test_size=0.1, random_state=42, shuffle=True)
 

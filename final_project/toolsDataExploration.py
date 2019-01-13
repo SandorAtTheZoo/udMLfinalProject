@@ -39,9 +39,6 @@ def getMetadata(data_dict):
                     if v['poi'] == True:
                         miniDict['poiCount'] = 1
                     featureQualityCount[k_feature] = miniDict
-    #print "FEATURE COUNT : ", featureQualityCount
-    #print "metadata ------------ ", featureQualityCount
-    print "poi count : ", poiCount
     return featureQualityCount, totalLen
 
 # now visually inspect the different features for any obvious problems/outliers
@@ -65,15 +62,17 @@ def visualInspect(featuresList, data_dict):
         # if xVal > 1000000:
         #     print xVal,yVal
         matplotlib.pyplot.scatter(xVal, yVal, c=pointColor, marker=pointMarker)
-    q1f1, q3f1, q1f2, q3f2 = calcOutliers(feat1, feat2)
-    print "outlier limits : ", q1f1, q3f1, q1f2, q3f2
-    for k,v in data_dict.items():
-        if type(v[featuresList[1]]) is not str:
-            if v[featuresList[1]] < q1f1 or v[featuresList[1]] > q3f1:
-                print featuresList[1], "-----", k, "===", v[featuresList[1]]
-        if type(v[featuresList[2]]) is not str:
-            if v[featuresList[2]] < q1f2 or v[featuresList[2]] > q3f2:
-                print featuresList[2], "-----", k, "===", v[featuresList[2]]
+
+    # # calculate outliers outside of the IQR*1.5 range and display those entities
+    # q1f1, q3f1, q1f2, q3f2 = calcOutliers(feat1, feat2)
+    # print "outlier limits : ", q1f1, q3f1, q1f2, q3f2
+    # for k,v in data_dict.items():
+    #     if type(v[featuresList[1]]) is not str:
+    #         if v[featuresList[1]] < q1f1 or v[featuresList[1]] > q3f1:
+    #             print featuresList[1], "-----", k, "===", v[featuresList[1]]
+    #     if type(v[featuresList[2]]) is not str:
+    #         if v[featuresList[2]] < q1f2 or v[featuresList[2]] > q3f2:
+    #             print featuresList[2], "-----", k, "===", v[featuresList[2]]
 
     matplotlib.pyplot.xlabel(featuresList[1])
     matplotlib.pyplot.ylabel(featuresList[2])

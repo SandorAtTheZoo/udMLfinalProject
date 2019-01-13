@@ -79,9 +79,9 @@ def validVal(featureVal):
 designed to work with featureFormat call with data_dict first
 i.e.
 cleanedData = featureFormat(data_dict, feature_list)
-calcKMeans(cleanedData, feature_list, 10)
+calcKBest(cleanedData, feature_list, 10)
 '''
-def calcKMeans(cleanedData, feature_list, k):
+def calcKBest(cleanedData, feature_list, k):
     X = pd.DataFrame(cleanedData[:, 1:], columns=feature_list[1:])
     y = pd.DataFrame(cleanedData[:, 0], columns=[feature_list[0]])
     # use f_classif instead of chi2 because it supports negative numbers
@@ -128,7 +128,7 @@ if __name__=="__main__":
     data_dict.pop('TOTAL', None)
 
     # cleanedData = featureFormat(data_dict, features_list, removePOI=False)
-    # fit, Xnew, featureScores = calcKMeans(cleanedData, features_list, 10)
+    # fit, Xnew, featureScores = calcKBest(cleanedData, features_list, 10)
     # print "scores : ", featureScores.nlargest(len(featureScores), 'Score')
 
 
@@ -141,7 +141,7 @@ if __name__=="__main__":
     cleanedData = featureFormat(data_dict, features_list, removePOI=False)
     mmScaler = MinMaxScaler(feature_range=(0,1000))
     resultsScaled = mmScaler.fit_transform(cleanedData)
-    fit, Xnew, featureScores = calcKMeans(resultsScaled, features_list, 10)
+    fit, Xnew, featureScores = calcKBest(resultsScaled, features_list, 10)
     Xtrain, Xtest, yTrain, yTest = train_test_split(Xnew, cleanedData[:, 0],
                                                     test_size=0.25, random_state=42, shuffle=True)
 
