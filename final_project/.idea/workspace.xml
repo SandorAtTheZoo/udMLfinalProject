@@ -255,6 +255,9 @@
       <module name="final_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -372,11 +375,12 @@
       <workItem from="1547351848452" duration="506000" />
       <workItem from="1547352377048" duration="503000" />
       <workItem from="1547352901577" duration="1792000" />
+      <workItem from="1547393695311" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163958000" />
+    <option name="totallyTimeSpent" value="164562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,8 +394,8 @@
   <component name="ToolWindowManager">
     <frame x="-2566" y="0" width="1490" height="1447" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69470406" visible="true" weight="0.18111888" />
-      <window_info id="Structure" order="1" sideWeight="0.30529594" side_tool="true" visible="true" weight="0.18111888" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69403565" visible="true" weight="0.18321678" />
+      <window_info id="Structure" order="1" sideWeight="0.30596438" side_tool="true" visible="true" weight="0.18321678" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997677" />
@@ -409,9 +413,9 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48494288" visible="true" weight="0.286014" />
+      <window_info active="true" anchor="right" id="SciView" order="3" sideWeight="0.48412085" visible="true" weight="0.286014" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.4996127" weight="0.32985073" />
-      <window_info anchor="right" x="0" y="0" width="238" height="1247" id="Documentation" order="5" sideWeight="0.5150571" side_tool="true" visible="true" weight="0.286014" />
+      <window_info anchor="right" x="0" y="0" width="238" height="1247" id="Documentation" order="5" sideWeight="0.51587915" side_tool="true" visible="true" weight="0.286014" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
