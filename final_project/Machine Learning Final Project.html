@@ -13955,9 +13955,14 @@ test_size = 0.25<br></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tuning-results">Tuning results<a class="anchor-link" href="#Tuning-results">&#182;</a></h3><p><a href="https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall">definitions</a><br>
-Precision : What proportion of positive identifications was actually correct?
-Recall : What proportion of actual positives was identified correctly?</p>
+<h3 id="Validation-and-Evaluating-Tuning-Results">Validation and Evaluating Tuning Results<a class="anchor-link" href="#Validation-and-Evaluating-Tuning-Results">&#182;</a></h3><p><a href="https://link.springer.com/referenceworkentry/10.1007%2F978-1-4419-9863-7_233">Validation</a> of a machine learning model is the process of taking a trained model and evaluating it with a testing data set. Typically, the data set is a separate portion of the same data from which the model was trained. The point of the evaluation is to score the ability of the trained model to make correct, generalized predictions on new datasets. Examples of scoring metrics are accuracy, precision, recall, and F1. Validation is important because without measuring how a model generalizes beyond the training dataset, its behavior with actual data is unpredictable and may lead to false conclusions (in the case of business analysis) or incorrect behavior/actions (in the case of devices that use machine learning algorithms for operation, like self driving cars). Validation will catch mistakes such as overtraining, where the training scores look good, but upon testing, the scores are much worse.<br>
+<br>
+TP : True Positives<br>
+FP : False Positives<br>
+FN : False Negatives<br></p>
+<p><a href="https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall">definitions</a><br>
+Precision : What proportion of positive identifications was actually correct? (TP/(TP+FP)) In the case of classifying POIs, precision is defined as : of the number of POIs that were identified, how many of them were actually POIs? In other words, if the model identified 100 POIs, but only 30 of those POIs identified were actually POIs, the precision would be 30/100, or 0.3.<br><br>
+Recall : What proportion of actual positives was identified correctly? (TP/(TP+FN)) Regarding this project, it would be defined as : of the actual number of POIs in the data, how many were actually identified correctly?  For example, if the model identified 30 POIs correctly (from the precision example above), but there were actually 200 POIs in the dataset, the recall would be 30/200, or 0.15.<br></p>
 <p>Both RandomForest and GradientBoost meet the criteria of precision and recall &gt; 0.3, but I would choose GradientBoost as the best classifier for this dataset because I believe that recall is more important than precision for this exercise. The question we need to answer is : do we want to investigate more people to ensure we find all persons of interest, or are we willing to miss some people who are responsible?  If we're willing to investigate more, then precision is less important than recall since we may mis-classify some people, but arguably we should realize their innocence upon further investigation. However, if we prioritize precision, then we might feel confident in the choices we've made, but we should expect that it is definitely an incomplete list, and that some responsible parties will not be held accountable.</p>
 
 </div>
